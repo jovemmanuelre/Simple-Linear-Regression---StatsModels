@@ -133,4 +133,5 @@ dmypy.json
 *.xml
 *.iml
 *.idea
+*.csv
 >>>>>>> 4abe030 (commit)
