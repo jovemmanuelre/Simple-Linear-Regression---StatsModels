@@ -14,8 +14,8 @@ y = data["price"]
 x1 = data["size"]
 
 plt.scatter(x1, y)
-plt.xlabel("size", fontsize=20)
-plt.ylabel("price", fontsize=20)
+plt.xlabel("size of real estate in sqm", fontsize=20)
+plt.ylabel("price of real estate in USD", fontsize=20)
 plt.show()
 
 x = sm.add_constant(x1)
@@ -25,8 +25,8 @@ results.summary()
 plt.scatter(x1, y)
 yhat = 223.1787*x1+1.019e+05
 fig = plt.plot(x1, yhat, lw=3.5, c="green", label="Regression Line")
-plt.xlabel("size", fontsize=20)
-plt.ylabel("price", fontsize=20)
+plt.xlabel("size of real estate in sqm", fontsize=20)
+plt.ylabel("price of real estate in USD", fontsize=20)
 plt.xlim(0)
 plt.ylim(0)
 plt.show()
